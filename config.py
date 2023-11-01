@@ -1,0 +1,17 @@
+DIALECT = 'mysql'
+DRIVER = 'pymysql'
+USERNAME = 'username'
+PASSWORD = 'password'
+HOST = 'database address'
+PORT = 'database port'
+
+DATABASE = 'mft'
+
+SQLALCHEMY_DATABASE_URI = "{}+{}://{}:{}@{}:{}/{}?charset=utf8".format(DIALECT,DRIVER,USERNAME,PASSWORD,HOST,PORT,DATABASE)
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_ECHO = False
+SQLALCHEMY_POOL_SIZE = 30
+SQLALCHEMY_MAX_OVERFLOW = 10
+SQLALCHEMY_POOL_TIMEOUT = 10
+
+API_KEY= "api key for zhipuai"
